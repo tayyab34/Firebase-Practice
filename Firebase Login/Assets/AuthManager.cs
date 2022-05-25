@@ -7,6 +7,7 @@ using TMPro;
 public class AuthManager : MonoBehaviour
 {
     public GameObject LogInscreen;
+    public GameObject RegisterScreen;
     //Firebase variables
     [Header("Firebase")]
     public DependencyStatus dependencyStatus;
@@ -185,6 +186,7 @@ public class AuthManager : MonoBehaviour
                         //Username is now set
                         //Now return to login screen
                         LogInscreen.SetActive(true);
+                        RegisterScreen.SetActive(false);
                         warningRegisterText.text = "";
                     }
                 }
